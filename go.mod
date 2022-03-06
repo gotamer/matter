@@ -1,4 +1,4 @@
-module matter
+module github.com/gotamer/matter
 
 go 1.17
 
