@@ -16,6 +16,7 @@ func Unmarshal(b []byte, v interface{}) (content []byte, err error) {
 	parts := bytes.SplitN(b, delim, 3)
 	if len(parts) == 1 {
 		content = parts[0]
+		return
 	} else if len(parts[0]) > len(parts[2]) {
 		content = parts[0]
 	} else {
